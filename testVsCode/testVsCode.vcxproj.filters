@@ -14,4 +14,38 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="testDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testElo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testOperator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="testPerfFast.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testElo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testPerfFast.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

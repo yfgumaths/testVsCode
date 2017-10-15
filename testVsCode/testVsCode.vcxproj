@@ -76,6 +76,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,6 +114,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="testDefine.h" />
+    <ClInclude Include="testElo.h" />
+    <ClInclude Include="testHead.h" />
+    <ClInclude Include="testOperator.h" />
+    <ClInclude Include="testPerfFast.h" />
+    <ClInclude Include="testTemplate.h" />
+    <ClInclude Include="testVector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testElo.cpp" />
+    <ClCompile Include="testPerfFast.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
