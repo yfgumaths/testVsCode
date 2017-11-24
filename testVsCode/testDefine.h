@@ -1,6 +1,14 @@
 #ifndef __TEST__DEFINE__H__
 #define __TEST__DEFINE__H__
 #include <ctime>
+#include <cstdio>
+
+#ifdef _DEBUG
+	#define DEBUG
+#else
+	#define PUBLISH
+#endif
+
 
 #ifndef DWORD
 #define DWORD unsigned long int

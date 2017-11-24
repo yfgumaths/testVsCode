@@ -81,5 +81,6 @@ void TOutputHex_E(T1& a)
 	cout << endl;
 }
 
+
 #endif // !__TEST__TEMPLATE__H__
 

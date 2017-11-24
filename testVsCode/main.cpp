@@ -1,5 +1,6 @@
 #include "testHead.h"
 #include <ctime>
+
 int testNewEloMatch(int nUserCount)
 {
 	int nResult = false;
@@ -36,14 +37,21 @@ void testEloMatch()
 	testNewEloMatch(nUserCount20);
 	testNewEloMatch(nUserCount20);
 
-
 }
 
 int main()
 {
-	PERFFAST_BEGIN("testEloMatch");
-	testEloMatch();
-	PERFFAST_END("testEloMatch");
+	//PERFFAST_BEGIN("testEloMatch");
+	//testEloMatch();
+	//PERFFAST_END("testEloMatch");
+
+#ifdef DEBUG
+	cout << "cur compile debug!\n";
+#endif
+
+#ifdef PUBLISH
+	cout << "cur compile release!\n";
+#endif
 
 	system("pause");
 	return 0;

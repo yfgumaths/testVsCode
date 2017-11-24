@@ -72,10 +72,13 @@ public:
 	int Init();
 	int InitVector(int nCount, WORD min = MIN_ELO_SCORE, WORD max = MAX_ELO_SCORE);
 	int AllocTeam();
+	friend ostream& operator<<(ostream& os, const CEloMatch* cEloMatch);
 private:
 	int GetRandomVector(int nCount, WORD min = MIN_ELO_SCORE, WORD max = MAX_ELO_SCORE);
 	int GetTotalEloScore();
 	std::vector<WORD> vecData;
 };
+
+
 
 #endif // #ifndef __TEST_ELO__H__

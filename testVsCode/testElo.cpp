@@ -124,3 +124,21 @@ int CEloMatch::InitVector(int nCount, WORD min, WORD max)
 Exit0:
 	return nResult;
 }
+
+ostream& operator<<(ostream& os, const CEloMatch* cEloMatch)
+{
+	int nResult = false;
+	int nRetCode = false;
+	EV_PROCESS_ERROR(cEloMatch);
+	for (auto iter = begin(cEloMatch->vecData); iter != end(cEloMatch->vecData); ++iter)
+	{
+		os << *iter << " ";
+	}
+	os << endl;
+//Exit1:
+	nResult = true;
+Exit0:
+	if (!nResult)
+		os << "ostream& operator<<(ostream& os, const CEloMatch* cEloMatch) ERROR!" << endl;
+	return os;
+}
